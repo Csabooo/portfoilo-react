@@ -71,7 +71,7 @@ function Header() {
 
       <div className="md:relative">
         <img
-          className=" flex mx-auto max-w-full z-0 md:hidden"
+          className=" flex mx-auto max-w-[70%] z-0 md:hidden"
           src={image_profile_mobile}
           alt="profile-mobile"
         />
