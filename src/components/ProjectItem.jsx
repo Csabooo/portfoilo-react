@@ -50,16 +50,16 @@ function ProjectItem({ largeImage, title, technologies, view_project, code }) {
           </div>
 
           <div className="pb-14 lg:hidden">
-            <button href="#">
+            <a href={view_project}>
               <p className="inline text-black tracking-[2.29px] decoration_underline ">
                 VIEW PROJECT
               </p>
-            </button>
-            <button href="#">
+            </a>
+            <a href={code}>
               <p className="inline pl-7 text-black tracking-[2.29px] decoration_underline">
                 VIEW CODE
               </p>
-            </button>
+            </a>
           </div>
         </div>
       </div>
