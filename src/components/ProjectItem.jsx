@@ -13,10 +13,10 @@ function ProjectItem({ largeImage, title, technologies, view_project, code }) {
     <div>
       <div
         onClick={buttonHandler}
-        className="relative lg:flex lg:cursor-pointer justify-center items-center">
+        className="lg:flex justify-center lg:cursor-pointer">
         {isWindowVisible && (
           <div className="absolute lg:flex w-full h-full bg-black opacity-80 z-20 justify-center items-center ">
-            <div className="flex flex-col justify-center items-center ">
+            <div className="flex flex-col justify-center items-center">
               <a href={view_project} className="lg:px-0">
                 <p className="inline  text-white tracking-[1.29px] decoration_underline ">
                   VIEW PROJECT
@@ -32,7 +32,7 @@ function ProjectItem({ largeImage, title, technologies, view_project, code }) {
         )}
         <div className="flex flex-col justify-center">
           <img
-            className="pb-6 block max-w-[342px] lg:max-w-full"
+            className="pb-6 block"
             src={largeImage}
             alt={`thumbnail-${title}-large`}
           />
