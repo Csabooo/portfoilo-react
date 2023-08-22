@@ -36,7 +36,7 @@ function Projects() {
 
   return (
     <div className="relative">
-      <hr className="md:hidden block" />
+      <hr className="block" />
       <div className="flex justify-between pt-20 pb-8 md:pb-16 lg:pt-20 lg:pb-24">
         <h1 className="text-left ">Projects</h1>
         <a href="#contact" className="block px-0">

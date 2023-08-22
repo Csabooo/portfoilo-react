@@ -2,7 +2,7 @@ import React from "react";
 
 function Main() {
   return (
-    <div className="md:grid md:grid-cols-2 md:gap-5 md:justify-items-start md:text-left lg:grid-cols-3 lg:grid-flow-rows-2 lg:pt-4">
+    <div className="md:grid md:grid-cols-2 md:gap-5 md:justify-items-start md:text-left md:pb-14 lg:grid-cols-3 lg:grid-flow-rows-2 ">
       <div className="technology">
         <h2 className="technologies">HTML</h2>
         <p>2 Years Experience</p>
@@ -24,7 +24,7 @@ function Main() {
         <p>1 Years Experience</p>
       </div>
       <div className="technology">
-        <h2 className="technologies">GitHUB</h2>
+        <h2 className="technologies">GitHub</h2>
         <p>1 Years Experience</p>
       </div>
       <div className="technology">
