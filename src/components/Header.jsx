@@ -11,7 +11,7 @@ function Header() {
         <img className="" src={cubes_logo} alt="cubes_logo" />
         <div className="flex flex-row justify-end items-center w-40 z-10 md:mx-0 md:right-4 lg:right-12">
           {/* -------------------------------GITHUB---------------------------------------- */}
-          <a type="button" href="https://www.github.com" className="pl-5">
+          <a type="button" href="https://github.com/Csabooo" className="pl-5">
             <svg
               className="z-10"
               xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ function Header() {
             </svg>
           </a>
           {/* -------------------------------FRONTENDMENTOR---------------------------------------- */}
-          <a type="button" href="https://www.frontendmentor.io" className="pl-5">
+          <a type="button" href="https://www.frontendmentor.io/profile/Csabooo" className="pl-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
@@ -39,7 +39,7 @@ function Header() {
           </a>
 
           {/* -------------------------------LINKEDIN---------------------------------------- */}
-          <a type="button" href="https://www.linkedin.com" className="pl-5">
+          <a type="button" href="https://www.linkedin.com/in/csaba-m%C3%BCller-83574a115/" className="pl-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -69,25 +69,19 @@ function Header() {
         </div>
       </div>
 
-      <div className="md:relative">
+      <div className="md:flex md:relative">
         <img
-          className="flex mx-auto max-w-[60%] z-0 md:hidden"
+          className="flex mx-auto max-w-[60%] md:hidden"
           src={image_profile_mobile}
           alt="profile-mobile"
         />
-        <div className="hidden md:flex lg:hidden md:absolute right-0 md:max-w-[40%] z-0">
-          <img
-            src={image_profile_mobile}
-            alt="profile-mobile"
-          />
-        </div>
-        <div className="hidden md:hidden lg:flex lg:absolute lg:right-0 lg:max-w-[35%]">
-          <img
+        {/* 
+        <img className="order-2 flex z-0 max-w-[70%] lg:hidden"
+          src={image_profile_mobile}
+          alt="profile-mobile"
+        />
+ */}
 
-            src={image_profile_mobile}
-            alt="profile-desktop"
-          />
-        </div>
 
         {/* --------------------------------------------------- MOBILE  -------------------------------------------------------------
  */}
@@ -95,14 +89,18 @@ function Header() {
           <h1 className="font-bold pt-9">Nice to meet you!</h1>
           <h1 className="pt-5">
             I’m{" "}
-            <span className="text-red font-windson pt-12 text-7xl">
+            <span className="text-red font-windson pt-14 text-7xl pb-0">
               Csaba Müller
             </span>
           </h1>
-          <p className="text-dark_grey pt-7">
-            Based in the Hungary, I’m a junior front-end developer <br />
-            passionate about building accessible web <br />
-            apps that users love.
+          <p className="text-dark_grey">
+            Based in the Hungary.<br /> Junior front-end developer,
+            who is looking for the first job as frontend developer.<br />
+            <br />
+            I have some live projects. <br />
+            Please have a look at these in the portfolio section below.
+            <br /><br />
+            I would be very glad you to give me an opportunity for a personal or remote introduction.
           </p>
 
           <div className="pb-20">
@@ -116,34 +114,45 @@ function Header() {
 
         {/* --------------------------------------------------- NOT Mobile -------------------------------------------------------------
  */}
-        <div className="hidden md:flex flex-col md:pt-0 text-left">
-          <div className="md:max-w-[500px] lg:max-w-[650px]">
-            <h1 className="pt-9 md:z-40 lg:inline-block ">
-              Nice to <br className="lg:hidden" />
-              meet you! <br className="md:hidden lg:inline-block" />
-              I’m <br className="md:flex lg:hidden" />
-              <span className="text-red font-windson pt-14 text-8xl lg:text-9xl">
-                Csaba Müller
-              </span>
-            </h1>
+        <div className="hidden md:flex md:flex-row justify-between">
+          <div className="order-1 hidden md:flex flex-col md:pt-0 text-left">
+            <div className="md:max-w-[550px] lg:max-w-[800px]">
+              <h1 className="pt-9 md:z-40 lg:inline-block ">
+                Nice to <br className="lg:hidden" />
+                meet you! <br className="md:hidden lg:inline-block" />
+                I’m <br className="md:flex lg:hidden" />
+                <span className="text-red font-windson pt-14 text-8xl lg:text-9xl">
+                  Csaba Müller
+                </span>
+              </h1>
 
-            <p className="text-black md:z-40">
-              Based in the Hungary, I’m a junior front-end developer <br />
-              passionate about building accessible web <br />
-              apps that users love.
-            </p>
+              <p className="text-black md:z-40">
+                Based in the Hungary. Junior front-end developer,
+                who is looking for the first job as frontend developer.<br />
+                <br />
+                I have some live projects.
+                Please have a look at these in the portfolio section below.
+                <br /><br />
+                I would be very glad you to give me an opportunity for a personal or remote introduction.
+              </p>
 
-            <div className="pt-16 pb-16 md:pt-12 md:pb-16">
-              <a
-                href="#contact"
-                className="inline tracking-[2.29px] text-black decoration_underline text-heading_M">
-                CONTACT ME
-              </a>
+              <div className="pt-16 pb-16 md:pt-12 md:pb-16">
+                <a
+                  href="#contact"
+                  className="inline tracking-[2.29px] text-black decoration_underline text-heading_M">
+                  CONTACT ME
+                </a>
+              </div>
             </div>
           </div>
-
-
+          <div className="hidden order-2 md:block md:max-w-[45%] md:pl-4 lg:max-w-[40%]">
+            <img
+              src={image_profile_mobile}
+              alt="profile-desktop"
+            />
+          </div>
         </div>
+
       </div>
 
       <hr className="pb-8 md:pb-4" />

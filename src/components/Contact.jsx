@@ -35,7 +35,7 @@ function Contact() {
           <img src={cubes_logo} alt="cubes_logo" />
           <div className="flex flex-row justify-end w-40 md:m-0">
             {/* -------------------------------GITHUB---------------------------------------- */}
-            <a type="button" href="https://www.github.com" className="pl-5">
+            <a type="button" href="https://github.com/Csabooo" className="pl-5">
               <svg
                 className="z-10"
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ function Contact() {
               </svg>
             </a>
             {/* -------------------------------FRONTENDMENTOR---------------------------------------- */}
-            <a type="button" href="https://www.frontendmentor.io" className="pl-5">
+            <a type="button" href="https://www.frontendmentor.io/profile/Csabooo" className="pl-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -63,7 +63,7 @@ function Contact() {
             </a>
 
             {/* -------------------------------LINKEDIN---------------------------------------- */}
-            <a type="button" href="https://www.linkedin.com" className="pl-5">
+            <a type="button" href="https://www.linkedin.com/in/csaba-m%C3%BCller-83574a115/" className="pl-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
