@@ -9,7 +9,7 @@ function Header() {
     <div>
       <div className="flex flex-row justify-between mt-4 md:pt-6">
         <img className="" src={cubes_logo} alt="cubes_logo" />
-        <div className="flex flex-row justify-end items-center w-40 z-10 md:mx-0 md:right-4 xl:right-12">
+        <div className="flex flex-row justify-end items-center w-40 z-10 md:mx-0 md:right-4 lg:right-12">
           {/* -------------------------------GITHUB---------------------------------------- */}
           <a type="button" href="https://www.github.com" className="pl-5">
             <svg
@@ -71,19 +71,19 @@ function Header() {
 
       <div className="md:relative">
         <img
-          className=" flex mx-auto max-w-[70%] z-0 md:hidden"
+          className="flex mx-auto max-w-[60%] z-0 md:hidden"
           src={image_profile_mobile}
           alt="profile-mobile"
         />
-        <div className="hidden md:flex xl:hidden md:absolute  right-0 md:w-[322px] z-0">
+        <div className="hidden md:flex lg:hidden md:absolute right-0 md:max-w-[40%] z-0">
           <img
             src={image_profile_mobile}
             alt="profile-mobile"
           />
         </div>
-        <div className="hidden md:hidden xl:flex xl:absolute -top-20  xl:right-0 xl:w-[445px] ">
+        <div className="hidden md:hidden lg:flex lg:absolute lg:right-0 lg:max-w-[35%]">
           <img
-            className="max-w-[445px]"
+
             src={image_profile_mobile}
             alt="profile-desktop"
           />
@@ -114,34 +114,40 @@ function Header() {
           </div>
         </div>
 
-        {/* --------------------------------------------------- MOBILE<  -------------------------------------------------------------
+        {/* --------------------------------------------------- NOT Mobile -------------------------------------------------------------
  */}
-        <div className="hidden md:flex flex-col md:pt-4 text-left xl:pt-20">
+        <div className="hidden md:flex flex-col md:pt-0 text-left">
+          <div className="md:max-w-[500px] lg:max-w-[650px]">
+            <h1 className="pt-9 md:z-40 lg:inline-block ">
+              Nice to <br className="lg:hidden" />
+              meet you! <br className="md:hidden lg:inline-block" />
+              I’m <br className="md:flex lg:hidden" />
+              <span className="text-red font-windson pt-14 text-8xl lg:text-9xl">
+                Csaba Müller
+              </span>
+            </h1>
 
-          <h1 className="pt-9 md:z-40 xl:inline-block">
-            Nice to <br className="xl:hidden" />
-            meet you! <br className="md:hidden xl:inline-block" />
-            I’m <br className="md:flex xl:hidden" />
-            <span className="text-red font-windson pt-14 text-8xl">
-              Csaba Müller
-            </span>
-          </h1>
+            <p className="text-black md:z-40">
+              Based in the Hungary, I’m a junior front-end developer <br />
+              passionate about building accessible web <br />
+              apps that users love.
+            </p>
 
-          <p className="text-black md:z-40">
-            Based in the Hungary, I’m a junior front-end developer <br />
-            passionate about building accessible web <br />
-            apps that users love.
-          </p>
-          <div className="pt-20 pb-16 xl:pb-40">
-            <a
-              href="#contact"
-              className="inline tracking-[2.29px] text-black decoration_underline text-heading_M">
-              CONTACT ME
-            </a>
+            <div className="pt-16 pb-16 md:pt-12 md:pb-16">
+              <a
+                href="#contact"
+                className="inline tracking-[2.29px] text-black decoration_underline text-heading_M">
+                CONTACT ME
+              </a>
+            </div>
           </div>
+
+
         </div>
       </div>
-      <hr className="pb-8 xl:pb-16" />
+
+      <hr className="pb-8 md:pb-4" />
+
     </div>
   );
 }

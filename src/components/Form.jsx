@@ -24,7 +24,7 @@ function Form() {
           <label className="text-red text-right text-xs pt-2">
             Sorry, invalid format here
           </label>
-          <span className="absolute bottom-4 right-0 material-symbols-outlined text-red">
+          <span className="absolute bottom-4 md:bottom-10 right-0 material-symbols-outlined text-red">
             error
           </span>
         </div>
@@ -71,7 +71,7 @@ function Form() {
           placeholder="MESSAGE"
         />
 
-        <div className="text-right pt-10 pb-16 md:pb-28 xl:pb-20">
+        <div className="text-right pt-10 pb-16 md:pb-28 lg:pb-20">
           <button type="submit">
             <p className=" text-light_yellow tracking-[2.29px] decoration_underline">
               SEND MESSAGE

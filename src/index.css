@@ -49,7 +49,7 @@
   }
 
   h1 {
-    @apply text-[40px] md:text-[72px] font-bold leading-none xl:text-heading_XL z-20;
+    @apply text-[40px] md:text-[72px] font-bold leading-none lg:text-heading_XL z-20;
   }
 
   h2 {
@@ -83,6 +83,10 @@
   span {
     @apply text-grey block pb-6 md:pb-0 tracking-[-1px];
   }
+
+  span.iam {
+    @apply text-black block pt-6;
+  }
 }
 
 @layer utilities {
@@ -91,7 +95,11 @@
   }
 
   .technologies {
-    @apply text-[32px] md:text-heading_L;
+    @apply text-[32px] md:text-heading_L md:pt-10;
+  }
+
+  .technology h2 {
+    @apply pb-0;
   }
 
   .decoration_underline {

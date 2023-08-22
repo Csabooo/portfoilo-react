@@ -37,10 +37,10 @@ function Projects() {
   return (
     <div className="relative">
       <hr className="md:hidden block" />
-      <div className="flex justify-between pt-20 pb-8 md:pb-16 xl:pt-0 xl:pb-24">
+      <div className="flex justify-between pt-20 pb-8 md:pb-16 lg:pt-20 lg:pb-24">
         <h1 className="text-left ">Projects</h1>
         <a href="#contact" className="block px-0">
-          <p className="relative text-black tracking-[2.29px] decoration_underline md:pt-4">
+          <p className="relative text-black tracking-[2.29px] decoration_underline md:pt-8 lg:pt-12">
             CONTACT ME
           </p>
         </a>

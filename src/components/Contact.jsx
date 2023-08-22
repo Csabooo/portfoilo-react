@@ -7,12 +7,12 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="relative pb-14 pt-10 px-5 bg-black  xl:pt-20">
-      <div className="text-light_yellow md:w-[447px] xl:w-[1110px] mx-auto xl:text-left">
-        <div className="xl:grid grid-rows-1 xl:gap-x-40 grid-cols-2 xl:w-[1110px] xl:mx-auto xl:justify-center xl:pb-20 relative">
-          <div className="xl:pt-3">
+      className="relative pb-14 pt-10 px-5 bg-black  lg:pt-20">
+      <div className="text-light_yellow md:max-w-[700px] lg:max-w-[1200px] mx-auto lg:text-left">
+        <div className="lg:grid grid-rows-1 lg:gap-x-40 grid-cols-2 lg:max-w-[1200px] lg:mx-auto lg:justify-center lg:pb-20 relative">
+          <div className="lg:pt-3">
             <h1>Contact</h1>
-            <p className="text-light_yellow pt-10">
+            <p className="text-light_yellow py-10">
               I would love to hear about your project and how I could help.
               Please fill in the form, and I’ll get back to you as soon as
               possible.
@@ -27,7 +27,8 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="max-w-[708px] mx-auto xl:max-w-[1110px] xl:pb-10">
+
+      <div className="max-w-[850px] mx-auto lg:max-w-[1200px] lg:pb-10">
         <hr className="" />
         <div className="pt-5 flex flex-row justify-between items-center md:pt-8">
 

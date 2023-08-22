@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <div className="2xl:container text-center mx-auto pb-10 px-5 md:pb-20">
-        <div className="mx-auto md:max-w-[768px] lg:max-w-[1110px]">
+        <div className="mx-auto md:max-w-[850px] lg:max-w-[1200px]">
           <Header />
           <Main />
           <Projects />
