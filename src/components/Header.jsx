@@ -7,7 +7,8 @@ import cubes_logo from "../assets/cubes.svg";
 function Header() {
   return (
     <div>
-      <div className="flex flex-row justify-between mt-4 md:pt-6">
+      {/* -------------------------------NAV BAR --------------------------------------------------------------------------------------------- */}
+      <nav className="flex flex-row justify-between mt-4 md:pt-6">
         <img className="" src={cubes_logo} alt="cubes_logo" />
         <div className="flex flex-row justify-end items-center w-40 z-10 md:mx-0 md:right-4 lg:right-12">
           {/* -------------------------------GITHUB---------------------------------------- */}
@@ -67,92 +68,84 @@ function Header() {
             </svg>
           </a>
         </div>
+      </nav>
+
+
+      {/* --------------------------------------------------- MOBILE  -------------------------------------------------------------
+ */}
+      <div className="md:hidden">
+        <div className="">
+          <img
+            className="flex mx-auto max-w-[60%] md:hidden"
+            src={image_profile_mobile}
+            alt="profile-mobile"
+          />
+        </div>
+        <h1 className="font-bold pt-9">Nice to meet you!</h1>
+        <h1 className="pt-5">
+          I’m{" "}
+          <span className="text-red font-windson pt-14 text-7xl pb-0">
+            Csaba Müller
+          </span>
+        </h1>
+        <p className="text-dark_grey">
+          Based in the Hungary.<br /> Junior front-end developer,
+          who is looking for the first job as frontend developer.<br />
+          <br />
+          I have some live projects. <br />
+          Please have a look at these in the portfolio section below.
+          <br /><br />
+          I would be very glad you to give me an opportunity for a personal or remote introduction.
+        </p>
+
+        <div className="pb-20">
+          <a
+            href="#contact"
+            className="inline tracking-[1.29px] text-black decoration_underline">
+            CONTACT ME
+          </a>
+        </div>
       </div>
 
-      <div className="md:flex md:relative">
-        <img
-          className="flex mx-auto max-w-[60%] md:hidden"
-          src={image_profile_mobile}
-          alt="profile-mobile"
-        />
-        {/* 
-        <img className="order-2 flex z-0 max-w-[70%] lg:hidden"
-          src={image_profile_mobile}
-          alt="profile-mobile"
-        />
+      {/* --------------------------------------------------- NOT Mobile -------------------------------------------------------------
  */}
+      <div className="hidden md:flex md:flex-row justify-between">
+        <div className="order-1 hidden md:flex flex-col md:pt-0 text-left">
+          <div className="md:max-w-[550px] lg:max-w-[800px]">
+            <h1 className="pt-9 md:z-40 lg:inline-block ">
+              Nice to <br className="lg:hidden" />
+              meet you! <br className="md:hidden lg:inline-block" />
+              I’m <br className="md:flex lg:hidden" />
+              <span className="text-red font-windson pt-14 text-8xl lg:text-9xl">
+                Csaba Müller
+              </span>
+            </h1>
 
+            <p className="text-black md:z-40">
+              Based in the Hungary. Junior front-end developer,
+              who is looking for the first job as frontend developer.<br />
+              <br />
+              I have some live projects.
+              Please have a look at these in the portfolio section below.
+              <br /><br />
+              I would be very glad you to give me an opportunity for a personal or remote introduction.
+            </p>
 
-        {/* --------------------------------------------------- MOBILE  -------------------------------------------------------------
- */}
-        <div className="md:hidden">
-          <h1 className="font-bold pt-9">Nice to meet you!</h1>
-          <h1 className="pt-5">
-            I’m{" "}
-            <span className="text-red font-windson pt-14 text-7xl pb-0">
-              Csaba Müller
-            </span>
-          </h1>
-          <p className="text-dark_grey">
-            Based in the Hungary.<br /> Junior front-end developer,
-            who is looking for the first job as frontend developer.<br />
-            <br />
-            I have some live projects. <br />
-            Please have a look at these in the portfolio section below.
-            <br /><br />
-            I would be very glad you to give me an opportunity for a personal or remote introduction.
-          </p>
-
-          <div className="pb-20">
-            <a
-              href="#contact"
-              className="inline tracking-[1.29px] text-black decoration_underline">
-              CONTACT ME
-            </a>
-          </div>
-        </div>
-
-        {/* --------------------------------------------------- NOT Mobile -------------------------------------------------------------
- */}
-        <div className="hidden md:flex md:flex-row justify-between">
-          <div className="order-1 hidden md:flex flex-col md:pt-0 text-left">
-            <div className="md:max-w-[550px] lg:max-w-[800px]">
-              <h1 className="pt-9 md:z-40 lg:inline-block ">
-                Nice to <br className="lg:hidden" />
-                meet you! <br className="md:hidden lg:inline-block" />
-                I’m <br className="md:flex lg:hidden" />
-                <span className="text-red font-windson pt-14 text-8xl lg:text-9xl">
-                  Csaba Müller
-                </span>
-              </h1>
-
-              <p className="text-black md:z-40">
-                Based in the Hungary. Junior front-end developer,
-                who is looking for the first job as frontend developer.<br />
-                <br />
-                I have some live projects.
-                Please have a look at these in the portfolio section below.
-                <br /><br />
-                I would be very glad you to give me an opportunity for a personal or remote introduction.
-              </p>
-
-              <div className="pt-16 pb-16 md:pt-12 md:pb-16">
-                <a
-                  href="#contact"
-                  className="inline tracking-[2.29px] text-black decoration_underline text-heading_M">
-                  CONTACT ME
-                </a>
-              </div>
+            <div className="pt-16 pb-16 md:pt-12 md:pb-16">
+              <a
+                href="#contact"
+                className="inline tracking-[2.29px] text-black decoration_underline text-heading_M">
+                CONTACT ME
+              </a>
             </div>
           </div>
-          <div className="hidden order-2 md:block md:max-w-[45%] md:pl-4 lg:max-w-[40%]">
-            <img
-              src={image_profile_mobile}
-              alt="profile-desktop"
-            />
-          </div>
         </div>
-
+        <div className="hidden order-2 md:block md:max-w-[45%] md:pl-4 lg:max-w-[40%]">
+          <img
+            src={image_profile_mobile}
+            alt="profile-desktop"
+          />
+        </div>
       </div>
 
       <hr className="pb-8 md:pb-4" />
