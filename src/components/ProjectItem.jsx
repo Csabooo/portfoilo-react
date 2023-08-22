@@ -18,12 +18,12 @@ function ProjectItem({ smallImage, largeImage, title, technologies }) {
           <div className="absolute lg:flex w-full h-full bg-black opacity-80 z-20 justify-center items-center ">
             <div className="flex flex-col justify-center items-center ">
               <a href="index.html" className="lg:px-0">
-                <p className="inline  text-white tracking-[2.29px] decoration_underline ">
+                <p className="inline  text-white tracking-[1.29px] decoration_underline ">
                   VIEW PROJECT
                 </p>
               </a>
               <a href="index.html" className="lg:pt-10 lg:px-0">
-                <p className="inline pl-7 lg:pl-0 text-white tracking-[2.29px] decoration_underline">
+                <p className="inline pl-7 lg:pl-0 text-white tracking-[1.29px] decoration_underline">
                   VIEW CODE
                 </p>
               </a>

@@ -29,7 +29,7 @@ module.exports = {
           "24px",
           {
             lineHeight: "32px",
-            fontWeight: "500",
+            fontWeight: "600",
           },
         ],
         body_L: [

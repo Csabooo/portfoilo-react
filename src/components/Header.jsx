@@ -95,7 +95,7 @@ function Header() {
           <h1 className="font-bold pt-9">Nice to meet you!</h1>
           <h1 className="pt-5">
             I’m{" "}
-            <span className="text-red font-windson pt-10 text-7xl">
+            <span className="text-red font-windson pt-12 text-7xl">
               Csaba Müller
             </span>
           </h1>
@@ -108,7 +108,7 @@ function Header() {
           <div className="pb-20">
             <a
               href="#contact"
-              className="inline tracking-[2.29px] text-black decoration_underline">
+              className="inline tracking-[1.29px] text-black decoration_underline">
               CONTACT ME
             </a>
           </div>
