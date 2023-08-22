@@ -1,7 +1,5 @@
 import React from "react";
-import image_profile_mobile from "../assets/me.png";
-import image_profile_tablet from "../assets/image-profile-tablet.webp";
-import image_profile_desktop from "../assets/image-profile-desktop.webp";
+import image_profile from "../assets/me.png";
 import cubes_logo from "../assets/cubes.svg";
 
 function Header() {
@@ -77,7 +75,7 @@ function Header() {
         <div className="">
           <img
             className="flex mx-auto max-w-[60%] md:hidden"
-            src={image_profile_mobile}
+            src={image_profile}
             alt="profile-mobile"
           />
         </div>
@@ -90,10 +88,10 @@ function Header() {
         </h1>
         <p className="text-dark_grey">
           Based in the Hungary.<br /> Junior front-end developer,
-          who is looking for the first job as frontend developer.<br />
+          who is looking for his first job as frontend developer.<br />
           <br />
           I have some live projects. <br />
-          Please have a look at these in the portfolio section below.
+          Please have a look at these in the "Projects" section below.
           <br /><br />
           I would be very glad you to give me an opportunity for a personal or remote introduction.
         </p>
@@ -122,11 +120,11 @@ function Header() {
             </h1>
 
             <p className="text-black md:z-40">
-              Based in the Hungary. Junior front-end developer,
-              who is looking for the first job as frontend developer.<br />
+              Who is looking for his first job as frontend developer on site or remote.
+              <br /><br />Currently located in Hungary.<br />
               <br />
               I have some live projects.
-              Please have a look at these in the portfolio section below.
+              Please have a look at these in the "Projects" section below.
               <br /><br />
               I would be very glad you to give me an opportunity for a personal or remote introduction.
             </p>
@@ -142,7 +140,7 @@ function Header() {
         </div>
         <div className="hidden order-2 md:block md:max-w-[45%] md:pl-4 lg:max-w-[40%]">
           <img
-            src={image_profile_mobile}
+            src={image_profile}
             alt="profile-desktop"
           />
         </div>

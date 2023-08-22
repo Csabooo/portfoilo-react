@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ProjectItem({ smallImage, largeImage, title, technologies }) {
+function ProjectItem({ largeImage, title, technologies, view_project, code }) {
   const [isWindowVisible, setWindowVisible] = useState(false);
 
   const buttonHandler = () => {
@@ -17,12 +17,12 @@ function ProjectItem({ smallImage, largeImage, title, technologies }) {
         {isWindowVisible && (
           <div className="absolute lg:flex w-full h-full bg-black opacity-80 z-20 justify-center items-center ">
             <div className="flex flex-col justify-center items-center ">
-              <a href="index.html" className="lg:px-0">
+              <a href={view_project} className="lg:px-0">
                 <p className="inline  text-white tracking-[1.29px] decoration_underline ">
                   VIEW PROJECT
                 </p>
               </a>
-              <a href="index.html" className="lg:pt-10 lg:px-0">
+              <a href={code} className="lg:pt-10 lg:px-0">
                 <p className="inline pl-7 lg:pl-0 text-white tracking-[1.29px] decoration_underline">
                   VIEW CODE
                 </p>
@@ -32,12 +32,7 @@ function ProjectItem({ smallImage, largeImage, title, technologies }) {
         )}
         <div className="flex flex-col justify-center">
           <img
-            className="pb-6 block md:hidden"
-            src={smallImage}
-            alt={`thumbnail-${title}-small`}
-          />
-          <img
-            className="pb-6 hidden md:block max-w-[342px] lg:max-w-full"
+            className="pb-6 block max-w-[342px] lg:max-w-full"
             src={largeImage}
             alt={`thumbnail-${title}-large`}
           />

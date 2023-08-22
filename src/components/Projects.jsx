@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from "react";
 import ProjectItem from "./ProjectItem"; // Adj meg a helyes elérési útvonalat
 
-import project_1_small from "../assets/thumbnail-project-1-small.webp";
-import project_2_small from "../assets/thumbnail-project-2-small.webp";
-import project_3_small from "../assets/thumbnail-project-3-small.webp";
-import project_4_small from "../assets/thumbnail-project-4-small.webp";
-import project_5_small from "../assets/thumbnail-project-5-small.webp";
-import project_6_small from "../assets/thumbnail-project-6-small.webp";
-
-import project_1_large from "../assets/thumbnail-project-1-large.webp";
-import project_2_large from "../assets/thumbnail-project-2-large.webp";
-import project_3_large from "../assets/thumbnail-project-3-large.webp";
-import project_4_large from "../assets/thumbnail-project-4-large.webp";
-import project_5_large from "../assets/thumbnail-project-5-large.webp";
-import project_6_large from "../assets/thumbnail-project-6-large.webp";
+import project_1_large from "../assets/insure-landing-page.jpg";
+import project_2_large from "../assets/sinlge-page-dev-demo.jpg";
+import project_3_large from "../assets/newsletter-sign-up-from.jpg";
+import project_4_large from "../assets/portfolio-archived.jpg";
+import project_5_large from "../assets/age-calculator.jpg";
+import project_6_large from "../assets/sunnyside-agency.jpg";
+import project_7_large from "../assets/clipboard-landing-page.jpg";
+import project_8_large from "../assets/news-homepage.jpg";
 
 function Projects() {
   const [isWindowVisible, setWindowVisible] = useState(false);
@@ -49,53 +44,77 @@ function Projects() {
       <div className="md:grid grid-cols-2 gap-8">
         <div>
           <ProjectItem
-            smallImage={project_1_small}
             largeImage={project_1_large}
-            title="DESIGN PORTFOLIO"
-            technologies={["HTML", "CSS"]}
+            title="INSURE LANDING PAGE"
+            technologies={["HTML", "CSS", "REACT", "TAILWIND CSS"]}
+            view_project={"https://csabooo-insure-landing-page.netlify.app"}
+            code={"https://github.com/Csabooo/16-Insure-landing-page-react"}
           />
         </div>
         <div>
           <ProjectItem
-            smallImage={project_2_small}
             largeImage={project_2_large}
-            title="E-LEARNING LANDING PAGE"
-            technologies={["HTML", "CSS"]}
+            title="SINGLE PAGE DEV DEMO"
+            technologies={["HTML", "CSS", "REACT", "TAILWIND CSS"]}
+            view_project={"https://csabooo-single-page-dev-portfolio.netlify.app"}
+            code={"https://github.com/Csabooo/forntendmentor-15-single-page-dev-portfolio-react"}
           />
         </div>
         <div>
           <ProjectItem
-            smallImage={project_3_small}
             largeImage={project_3_large}
-            title="TODO WEB APP"
-            technologies={["HTML", "CSS", "JAVASCRIPT "]}
+            title="NEWSLETTER SIGN UP FORM"
+            technologies={["HTML", "CSS", "REACT", "TAILWIND CSS"]}
+            view_project={"https://csabooo-newsletter-signup-form.netlify.app"}
+            code={"https://github.com/Csabooo/frontendmentor-14-sign-up-form-react-tailwindcss"}
           />
         </div>
         <div>
           <ProjectItem
-            smallImage={project_4_small}
             largeImage={project_4_large}
-            title="ENTERTAINMENT WEB APP"
-            technologies={["HTML", "CSS", "JAVASCRIPT "]}
+            title="PORTFOLIO-OLD VERSION (ARCHIVED)"
+            technologies={["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP 5"]}
+            view_project={"https://csabooo.github.io/portfolio"}
+            code={"https://github.com/Csabooo/portfolio"}
           />
         </div>
         <div>
           <ProjectItem
-            smallImage={project_5_small}
             largeImage={project_5_large}
-            title="MEMORY GAME"
-            technologies={["HTML", "CSS", "JAVASCRIPT "]}
+            title="AGE CALCULATOR APP"
+            technologies={["HTML", "CSS", "JAVASCRIPT", "TAILWIND CSS"]}
+            view_project={"https://csabooo-age-calculator-app.netlify.app"}
+            code={"https://github.com/Csabooo/frontendmentor-13-age-calculator-app-HTML-TailwindCSS-JS"}
           />
         </div>
         <div>
           <ProjectItem
-            smallImage={project_6_small}
             largeImage={project_6_large}
-            title="ART GALLERY SHOWCASE"
-            technologies={["HTML", "CSS", "JAVASCRIPT "]}
+            title="SUNNYSIDE AGENCY LANDING PAGE"
+            technologies={["HTML", "CSS", "JAVASCRIPT", "TAILWIND CSS"]}
+            view_project={"https://csabooo-sunnyside-agency-landing-page.netlify.app"}
+            code={"https://github.com/Csabooo/forntendmentor-12-sunnyside-agency-landing-page-main-HTML-TailwindCSS"}
           />
         </div>
-        {/* ... és így tovább minden projekt elemre ... */}
+        <div>
+          <ProjectItem
+            largeImage={project_7_large}
+            title="CLIPBOARD LANDING PAGE"
+            technologies={["HTML", "CSS", "JAVASCRIPT", "TAILWIND CSS"]}
+            view_project={"https://csabooo-clipboard-landing-page.netlify.app"}
+            code={"https://github.com/Csabooo/frontendmentor-09-Clipboard-landing-page"}
+          />
+        </div>
+        <div>
+          <ProjectItem
+            largeImage={project_8_large}
+            title="NEWS HOMEPAGE"
+            technologies={["HTML", "CSS", "JAVASCRIPT", "TAILWIND CSS"]}
+            view_project={"https://csabooo-news-homepage.netlify.app"}
+            code={"https://github.com/Csabooo/frontendmentor-10-News-homepage-HTML-TailwindCSS"}
+          />
+        </div>
+
       </div>
     </div>
   );
