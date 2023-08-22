@@ -87,8 +87,8 @@ function Header() {
           </span>
         </h1>
         <p className="text-dark_grey">
-          Based in the Hungary.<br /> Junior front-end developer,
-          who is looking for his first job as frontend developer.<br />
+          Who is looking for his first job as frontend developer.<br />
+          Currently located in Hungary.<br />
           <br />
           I have some live projects. <br />
           Please have a look at these in the "Projects" section below.
