@@ -4,7 +4,7 @@ function ProjectItem({ largeImage, title, technologies, view_project, code }) {
   const [isWindowVisible, setWindowVisible] = useState(false);
 
   const buttonHandler = () => {
-    if (window.innerWidth >= 1280) {
+    if (window.innerWidth >= 1024) {
       setWindowVisible((prevIsVisible) => !prevIsVisible);
     }
   };
@@ -13,9 +13,9 @@ function ProjectItem({ largeImage, title, technologies, view_project, code }) {
     <div>
       <div
         onClick={buttonHandler}
-        className="lg:flex justify-center lg:cursor-pointer">
+        className="relative lg:flex justify-center lg:cursor-pointer">
         {isWindowVisible && (
-          <div className="absolute lg:flex w-full h-full bg-black opacity-80 z-20 justify-center items-center ">
+          <div className="absolute lg:flex w-full h-full bg-black opacity-80 z-20 justify-center items-center">
             <div className="flex flex-col justify-center items-center">
               <a href={view_project} className="lg:px-0">
                 <p className="inline  text-white tracking-[1.29px] decoration_underline ">
@@ -32,7 +32,7 @@ function ProjectItem({ largeImage, title, technologies, view_project, code }) {
         )}
         <div className="flex flex-col justify-center">
           <img
-            className="pb-6 block"
+            className="block"
             src={largeImage}
             alt={`thumbnail-${title}-large`}
           />
@@ -40,7 +40,7 @@ function ProjectItem({ largeImage, title, technologies, view_project, code }) {
       </div>
       <div className="flex flex-col text-left">
         <div>
-          <h3 className="pb-2">{title}</h3>
+          <h3 className="pt-5 pb-2">{title}</h3>
           <div className="pb-4">
             {technologies.map((tech, index) => (
               <span key={index} className="inline pr-4">
