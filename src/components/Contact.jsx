@@ -39,8 +39,9 @@ function Contact() {
               <svg
                 className="z-10"
                 xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="24">
+                width="34"
+                height="43"
+                viewBox="0 3 28 7">
                 <path
                   fill="#f4f1de"
                   fillRule="evenodd"
@@ -52,8 +53,9 @@ function Contact() {
             <a type="button" href="https://www.frontendmentor.io/profile/Csabooo" className="pl-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="23"
+                width="34"
+                height="43"
+                viewBox="0 3 28 7"
                 className="z-10">
                 <path
                   fill="#f4f1de"
@@ -66,8 +68,9 @@ function Contact() {
             <a type="button" href="https://www.linkedin.com/in/csaba-m%C3%BCller-83574a115/" className="pl-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="24"
+                width="34"
+                height="43"
+                viewBox="0 3 28 7"
                 className="z-10">
                 <path
                   fill="#f4f1de"
@@ -78,11 +81,12 @@ function Contact() {
             </a>
 
             {/* -------------------------------TWITTER---------------------------------------- */}
-            <a type="button" href="https://twitter.com/" className="pl-5">
+            <a type="button" href="https://twitter.com/" className="pl-5 pb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="34"
+                height="43"
+                viewBox="0 3 28 7"
                 className="z-10">
                 <path
                   fill="#f4f1de"

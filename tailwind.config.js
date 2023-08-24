@@ -26,7 +26,7 @@ module.exports = {
           },
         ],
         heading_M: [
-          "24px",
+          "22px",
           {
             lineHeight: "32px",
             fontWeight: "600",

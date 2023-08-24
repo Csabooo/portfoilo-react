@@ -37,10 +37,6 @@
     @apply text-red;
   }
 
-  a:hover svg path {
-    fill: #c83e19;
-  }
-
   button p:hover {
     @apply text-red;
   }
@@ -136,4 +132,15 @@
 
 .mouse {
   cursor: grab;
+}
+
+a,
+.decoration_underline,
+a svg path {
+  transition: 0.5s;
+}
+
+a:hover svg path {
+  fill: #c83e19;
+  transform: translateY(-8px);
 }

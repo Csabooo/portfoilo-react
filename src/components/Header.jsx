@@ -10,12 +10,14 @@ function Header() {
         <img className="" src={cubes_logo} alt="cubes_logo" />
         <div className="flex flex-row justify-end items-center w-40 z-10 md:mx-0 md:right-4 lg:right-12">
           {/* -------------------------------GITHUB---------------------------------------- */}
-          <a type="button" href="https://github.com/Csabooo" className="pl-5">
+          <a type="button" href="https://github.com/Csabooo" className="pl-5 pb-4">
             <svg
               className="z-10"
               xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="24">
+              width="34"
+              height="43"
+              viewBox="0 3 28 7">
+
               <path
                 fill="#151515"
                 fillRule="evenodd"
@@ -24,11 +26,12 @@ function Header() {
             </svg>
           </a>
           {/* -------------------------------FRONTENDMENTOR---------------------------------------- */}
-          <a type="button" href="https://www.frontendmentor.io/profile/Csabooo" className="pl-5">
+          <a type="button" href="https://www.frontendmentor.io/profile/Csabooo" className="pl-5 pb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="23"
+              width="34"
+              height="43"
+              viewBox="0 3 28 7"
               className="z-10">
               <path
                 fill="#151515"
@@ -38,11 +41,12 @@ function Header() {
           </a>
 
           {/* -------------------------------LINKEDIN---------------------------------------- */}
-          <a type="button" href="https://www.linkedin.com/in/csaba-m%C3%BCller-83574a115/" className="pl-5">
+          <a type="button" href="https://www.linkedin.com/in/csaba-m%C3%BCller-83574a115/" className="pl-5 pb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="24"
+              width="34"
+              height="43"
+              viewBox="0 3 28 7"
               className="z-10">
               <path
                 fill="#151515"
@@ -53,11 +57,12 @@ function Header() {
           </a>
 
           {/* -------------------------------TWITTER---------------------------------------- */}
-          <a type="button" href="https://twitter.com/" className="pl-5">
+          <a type="button" href="https://twitter.com/" className="pl-5 pb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="20"
+              width="34"
+              height="43"
+              viewBox="0 3 28 7"
               className="z-10">
               <path
                 fill="#151515"
