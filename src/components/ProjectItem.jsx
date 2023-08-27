@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function ProjectItem({ largeImage, title, technologies, view_project, code }) {
   const [isWindowVisible, setWindowVisible] = useState(false);
 
-  const buttonHandler = () => {
+  const mouseHandler = () => {
     if (window.innerWidth >= 1024) {
       setWindowVisible((prevIsVisible) => !prevIsVisible);
     }
@@ -12,10 +12,10 @@ function ProjectItem({ largeImage, title, technologies, view_project, code }) {
   return (
     <div>
       <div
-        onClick={buttonHandler}
+        onMouseEnter={mouseHandler}
         className="relative lg:flex justify-center lg:cursor-pointer">
         {isWindowVisible && (
-          <div className="absolute lg:flex w-full h-full bg-black opacity-80 z-20 justify-center items-center">
+          <div className="absolute flex w-full h-full bg-black opacity-0 transition-opacity duration-500 ease-out hover:opacity-80 z-20 justify-center items-center">
             <div className="flex flex-col justify-center items-center">
               <a href={view_project} className="lg:px-0">
                 <p className="inline  text-white tracking-[1.29px] decoration_underline ">
