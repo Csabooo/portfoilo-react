@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 function Form() {
+
+  const [enteredName, setName] = useState("");
   const [enteredMail, setMail] = useState("");
   const [enteredMessage, setMessage] = useState("");
   const [isValid, setValid] = useState(true);
@@ -12,26 +14,30 @@ function Form() {
     const validRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
     if (validRegex.test(enteredMail)) {
-      const mailtoLink = `mailto:csaba.muller@hotmail.com?subject=Contact Inquiry&body=
-         ${enteredMessage}`;
-
+      const mailtoLink = `mailto:csaba.muller@hotmail.com?subject=Contact Inquiry&body=${encodeURIComponent(
+        `${enteredMessage}\n\nBest regards:\n\n${enteredName}\n\n`
+      )}`;
 
       window.open(mailtoLink);
 
       return;
     } else {
-      setValid(false);
       setWarning(
         <div className="relative">
           <label className="text-red text-right text-xs pt-2">
             Sorry, invalid format here
           </label>
-          <span className="absolute bottom-4 md:bottom-10 right-0 material-symbols-outlined text-red">
+          <span className="absolute bottom-4 right-0 material-symbols-outlined text-red md:bottom-10">
             error
           </span>
         </div>
       );
     }
+  };
+
+  const nameHandler = (event) => {
+    const name = event.target.value;
+    setName(name);
   };
 
   const emailHandler = (event) => {
@@ -54,7 +60,7 @@ function Form() {
   return (
     <div>
       <form onSubmit={formSubmitHandler}>
-        <input onFocus={clearInput} type="text" placeholder="NAME" id="name" />
+        <input className="inputField" onChange={nameHandler} onFocus={clearInput} type="text" placeholder="NAME" />
 
         <input
           className={isValid ? "inputField" : "inputField error"}
@@ -73,9 +79,9 @@ function Form() {
           placeholder="MESSAGE"
         />
 
-        <div className="text-right pt-10 pb-16 md:pb-28 lg:pb-20">
+        <div className="text-right pt-10 pb-16 md:pb-28 xl:pb-20">
           <button type="submit">
-            <p className=" text-light_yellow tracking-[2.29px] decoration_underline">
+            <p className=" text-white tracking-[2.29px] decoration_underline">
               SEND MESSAGE
             </p>
           </button>
@@ -86,5 +92,3 @@ function Form() {
 }
 
 export default Form;
-
-
