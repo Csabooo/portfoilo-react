@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import ProjectItem from "./ProjectItem"; // Adj meg a helyes elérési útvonalat
 
-import project_1_large from "../assets/insure-landing-page.jpg";
-import project_2_large from "../assets/sinlge-page-dev-demo.jpg";
-import project_3_large from "../assets/newsletter-sign-up-from.jpg";
-import project_4_large from "../assets/portfolio-archived.jpg";
-import project_5_large from "../assets/age-calculator.jpg";
-import project_6_large from "../assets/sunnyside-agency.jpg";
-import project_7_large from "../assets/clipboard-landing-page.jpg";
-import project_8_large from "../assets/news-homepage.jpg";
+import project_1_large from "../assets/fluffy-veterinary-clinic.jpg";
+import project_2_large from "../assets/insure-landing-page.jpg";
+import project_3_large from "../assets/sinlge-page-dev-demo.jpg";
+import project_4_large from "../assets/newsletter-sign-up-from.jpg";
+import project_5_large from "../assets/portfolio-archived.jpg";
+import project_6_large from "../assets/age-calculator.jpg";
+import project_7_large from "../assets/sunnyside-agency.jpg";
+import project_8_large from "../assets/clipboard-landing-page.jpg";
+import project_9_large from "../assets/news-homepage.jpg";
+
 
 function Projects() {
   const [isWindowVisible, setWindowVisible] = useState(false);
@@ -45,6 +47,15 @@ function Projects() {
         <div>
           <ProjectItem
             largeImage={project_1_large}
+            title="FLUFFY VETERINARY CLINIC"
+            technologies={["HTML", "CSS", "REACT", "TAILWIND CSS"]}
+            view_project={"https://veterinary-clinic-sample-react.netlify.app/"}
+            code={"https://github.com/Csabooo/veterinary-clinic-sample-react"}
+          />
+        </div>
+        <div>
+          <ProjectItem
+            largeImage={project_2_large}
             title="INSURE LANDING PAGE"
             technologies={["HTML", "CSS", "REACT", "TAILWIND CSS"]}
             view_project={"https://csabooo-insure-landing-page.netlify.app"}
@@ -53,7 +64,7 @@ function Projects() {
         </div>
         <div>
           <ProjectItem
-            largeImage={project_2_large}
+            largeImage={project_3_large}
             title="SINGLE PAGE DEV DEMO"
             technologies={["HTML", "CSS", "REACT", "TAILWIND CSS"]}
             view_project={"https://csabooo-single-page-dev-portfolio.netlify.app"}
@@ -62,7 +73,7 @@ function Projects() {
         </div>
         <div>
           <ProjectItem
-            largeImage={project_3_large}
+            largeImage={project_4_large}
             title="NEWSLETTER SIGN UP FORM"
             technologies={["HTML", "CSS", "REACT", "TAILWIND CSS"]}
             view_project={"https://csabooo-newsletter-signup-form.netlify.app"}
@@ -71,7 +82,7 @@ function Projects() {
         </div>
         <div>
           <ProjectItem
-            largeImage={project_4_large}
+            largeImage={project_5_large}
             title="PORTFOLIO-OLD VERSION (ARCHIVED)"
             technologies={["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP 5"]}
             view_project={"https://csabooo.github.io/portfolio"}
@@ -80,7 +91,7 @@ function Projects() {
         </div>
         <div>
           <ProjectItem
-            largeImage={project_5_large}
+            largeImage={project_6_large}
             title="AGE CALCULATOR APP"
             technologies={["HTML", "CSS", "JAVASCRIPT", "TAILWIND CSS"]}
             view_project={"https://csabooo-age-calculator-app.netlify.app"}
@@ -89,7 +100,7 @@ function Projects() {
         </div>
         <div>
           <ProjectItem
-            largeImage={project_6_large}
+            largeImage={project_7_large}
             title="SUNNYSIDE AGENCY LANDING PAGE"
             technologies={["HTML", "CSS", "JAVASCRIPT", "TAILWIND CSS"]}
             view_project={"https://csabooo-sunnyside-agency-landing-page.netlify.app"}
@@ -98,7 +109,7 @@ function Projects() {
         </div>
         <div>
           <ProjectItem
-            largeImage={project_7_large}
+            largeImage={project_8_large}
             title="CLIPBOARD LANDING PAGE"
             technologies={["HTML", "CSS", "JAVASCRIPT", "TAILWIND CSS"]}
             view_project={"https://csabooo-clipboard-landing-page.netlify.app"}
@@ -107,13 +118,14 @@ function Projects() {
         </div>
         <div>
           <ProjectItem
-            largeImage={project_8_large}
+            largeImage={project_9_large}
             title="NEWS HOMEPAGE"
             technologies={["HTML", "CSS", "JAVASCRIPT", "TAILWIND CSS"]}
             view_project={"https://csabooo-news-homepage.netlify.app"}
             code={"https://github.com/Csabooo/frontendmentor-10-News-homepage-HTML-TailwindCSS"}
           />
         </div>
+
 
       </div>
     </div>
