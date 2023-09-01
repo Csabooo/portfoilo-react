@@ -17,10 +17,6 @@
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
     @apply bg-light_yellow text-black;
   }
@@ -136,6 +132,10 @@
 
 .mouse {
   cursor: grab;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a,
