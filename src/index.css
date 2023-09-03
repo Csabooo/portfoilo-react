@@ -37,6 +37,17 @@
     @apply text-red;
   }
 
+  a,
+  .decoration_underline,
+  a svg path {
+    transition: 0.5s;
+  }
+
+  a:hover svg path {
+    fill: theme(colors.red);
+    transform: translateY(-8px);
+  }
+
   button p:hover {
     @apply text-red;
   }
@@ -46,6 +57,7 @@
   }
   html {
     @apply font-robotomedium;
+    scroll-behavior: smooth;
   }
 
   h1 {
@@ -117,38 +129,23 @@
     @apply bg-black border-b border-solid border-red pl-5 text-red placeholder:text-red;
   }
 
+  .material-symbols-outlined {
+    font-variation-settings:
+      "FILL" 0,
+      "wght" 200,
+      "GRAD" 0,
+      "opsz" 24;
+  }
+
   #message {
     @apply placeholder:text-light_yellow pt-4 pb-16;
+  }
+
+  .mouse {
+    cursor: grab;
   }
 
   #name {
     @apply placeholder:text-light_yellow;
   }
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-    "FILL" 0,
-    "wght" 200,
-    "GRAD" 0,
-    "opsz" 24;
-}
-
-.mouse {
-  cursor: grab;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-a,
-.decoration_underline,
-a svg path {
-  transition: 0.5s;
-}
-
-a:hover svg path {
-  fill: #c83e19;
-  transform: translateY(-8px);
 }
