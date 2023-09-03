@@ -49,7 +49,7 @@ function Projects() {
             largeImage={project_1_large}
             title="FLUFFY VETERINARY CLINIC"
             technologies={["HTML", "CSS", "REACT", "TAILWIND CSS"]}
-            view_project={"https://veterinary-clinic-sample-react.netlify.app/"}
+            view_project={"https://csabooo-veterinary-clinic-react.netlify.app"}
             code={"https://github.com/Csabooo/veterinary-clinic-sample-react"}
           />
         </div>
