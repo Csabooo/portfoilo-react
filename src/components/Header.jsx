@@ -92,10 +92,11 @@ function Header() {
           </span>
         </h1>
         <p className="text-dark_grey">
-          Who is looking for his first job as frontend developer.<br />
+          Who is looking for the first job <br />as frontend developer.<br />
+          <br />
           Currently located in Hungary.<br />
           <br />
-          I have some live projects. <br />
+          I have some live projects now. <br />
           Please have a look at these in the "Projects" section below.
           <br /><br />
           I would be very glad you to give me an opportunity for a personal or remote introduction.
@@ -125,7 +126,7 @@ function Header() {
             </h1>
 
             <p className="text-black md:z-40">
-              Who is looking for his first job as frontend developer on site or remote.
+              Who is looking for the first job as frontend developer on site or remote.
               <br /><br />Currently located in Hungary.<br />
               <br />
               I have some live projects.

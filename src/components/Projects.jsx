@@ -10,6 +10,7 @@ import project_6_large from "../assets/age-calculator.jpg";
 import project_7_large from "../assets/sunnyside-agency.jpg";
 import project_8_large from "../assets/clipboard-landing-page.jpg";
 import project_9_large from "../assets/news-homepage.jpg";
+import project_10_large from "../assets/tip-calculator.jpg";
 
 
 function Projects() {
@@ -44,6 +45,15 @@ function Projects() {
       </div>
 
       <div className="md:grid grid-cols-2 gap-8">
+        <div>
+          <ProjectItem
+            largeImage={project_10_large}
+            title="TIP CALCULATOR APP"
+            technologies={["HTML", "CSS", "REACT", "TAILWIND CSS"]}
+            view_project={"https://csabooo-tip-calculator-app.netlify.app"}
+            code={"https://github.com/Csabooo/frontendmentor-17-tip-calculator-app"}
+          />
+        </div>
         <div>
           <ProjectItem
             largeImage={project_1_large}
